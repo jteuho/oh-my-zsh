@@ -1,8 +1,11 @@
 # custom files
-custom/
+# custom/
 
 # temp files directories
 cache/
 log/
+
+# backups etc
+*~
 *.swp
 .DS_Store
