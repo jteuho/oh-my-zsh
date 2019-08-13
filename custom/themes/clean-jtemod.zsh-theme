@@ -14,11 +14,9 @@ then
 	USER=""
 fi
 
-#DIRECTORY="%{$fg[blue]%}%B %(5~/%-4~.../) %(5~/%3~/%(4~/%3~/%(3~/%2~/%(2~/%1~/%0~))))  %b%{$reset_color%}"
 DIRECTORY="%{$fg[blue]%}%B%(12~/.../)%11~%b%{$reset_color%}"
 PROMPT='[%*] $USER$DIRECTORY
 $(git_prompt_info)%(!.#.$) '
-# RPROMPT='[%*]'
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"

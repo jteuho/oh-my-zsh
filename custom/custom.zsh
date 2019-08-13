@@ -1,10 +1,20 @@
 ssh-add -K &> /dev/null
+
 export GIT_SSH="/usr/bin/ssh"
 
 export PATH=$PATH:/Users/jteuho/scripts
 
 export EDITOR='vim'
 
-unsetopt INC_APPEND_HISTORY
-setopt APPEND_HISTORY
-unsetopt share_history
+function precmd () {
+  MAXLEN=20 # Fits into iTerm2 tab
+  LEN=${#PWD}
+  D=${PWD}
+  if [ ${LEN} -gt ${MAXLEN} ];
+  then
+    START=$(( LEN - MAXLEN + 3 )) # Three for the dots
+    D="..."$(echo $PWD | cut -c ${START}-)
+  fi
+  window_title="\033]0;${D}\007"
+  echo -ne "$window_title"
+}
