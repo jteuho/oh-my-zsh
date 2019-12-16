@@ -32,7 +32,7 @@ SAVEHIST=500
 
 unsetopt inc_append_history
 setopt append_history
-unsetopt share_history            # No not share command history data
+unsetopt share_history            # Do not share command history data
 unsetopt extended_history         # No timestamps in HISTFILE
-setopt hist_ignore_dups           # ignore duplicated commands history list
-setopt hist_verify                # show command with history expansion to user before running it
+setopt hist_ignore_dups           # Ignore duplicated commands in history list
+setopt hist_verify                # Show command with history expansion to user before running it
