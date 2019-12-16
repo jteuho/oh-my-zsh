@@ -7,7 +7,7 @@ export PATH=$PATH:/Users/jteuho/scripts
 export EDITOR='vim'
 
 function precmd () {
-  MAXLEN=20 # Fits into iTerm2 tab
+  MAXLEN=40 # Fits into iTerm2 tab
   LEN=${#PWD}
   D=${PWD}
   if [ ${LEN} -gt ${MAXLEN} ];
