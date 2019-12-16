@@ -3,10 +3,10 @@ alias devstart='./dev_start.sh default,localzuul,localvareui morocco'
 alias ls='ls -GF'
 alias grep='grep --color=AUTO'
 
-alias -g H='| head'
-alias -g T='| tail'
-alias -g G='| grep'
-alias -g L="| less"
+alias -g PH='| head'
+alias -g PT='| tail'
+alias -g PG='| grep'
+alias -g PL="| less"
 alias -g LL="2>&1 | less"
 alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
