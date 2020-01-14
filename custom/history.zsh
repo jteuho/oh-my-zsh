@@ -27,12 +27,12 @@ esac
 
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
-HISTSIZE=500
-SAVEHIST=500
+HISTSIZE=2000
+SAVEHIST=2000
 
-unsetopt inc_append_history
-setopt append_history
-unsetopt share_history            # Do not share command history data
-unsetopt extended_history         # No timestamps in HISTFILE
+#unsetopt inc_append_history
+#setopt append_history
+#setopt share_history              # Share command history data
+#unsetopt extended_history         # No timestamps in HISTFILE
 setopt hist_ignore_dups           # Ignore duplicated commands in history list
 setopt hist_verify                # Show command with history expansion to user before running it
