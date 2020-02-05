@@ -1,4 +1,5 @@
 alias devstart='./dev_start.sh default,localzuul,localvareui morocco'
+alias devprep='./autopipe_to_dev.sh -k && npm ci && npm run build && npm run apina && ./autopipe_to_dev.sh'
 
 alias ls='ls -GF'
 alias grep='grep --color=AUTO'
@@ -16,12 +17,11 @@ ffg() {
   find . -type f -name $1 -exec grep $2 '{}' ';' -print
 }
 
-alias gcim='git commit -m'
-alias gciam='git commit -am'
 alias gst='git status'
 alias gfst='git fetch && git status'
-alias gco='git checkout'
 alias gamend='git commit --verbose --amend --all'
-alias glog='git log --graph --pretty=oneline --abbrev-commit --decorate'
+alias glog='git log --pretty=oneline --abbrev-commit --decorate=auto'
+alias glogg='git log --graph --pretty=oneline --abbrev-commit --decorate=auto'
+alias glogr='git log --pretty=reference --abbrev-commit --decorate=auto'
 alias grbm='git fetch && git rebase origin/master'
 alias lolpull='git stash && git pull --rebase && git stash pop'

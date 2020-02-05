@@ -6,6 +6,8 @@ export PATH=$PATH:/Users/jteuho/scripts
 
 export EDITOR='vim'
 
+zstyle ':completion:*' accept-exact '*(N)'
+
 function precmd () {
   MAXLEN=40 # Fits into iTerm2 tab
   LEN=${#PWD}
