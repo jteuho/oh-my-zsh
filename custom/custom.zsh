@@ -2,6 +2,8 @@ ssh-add -K &> /dev/null
 
 export GIT_SSH="/usr/bin/ssh"
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 export PATH=$PATH:/Users/jteuho/scripts
 
 export EDITOR='vim'
