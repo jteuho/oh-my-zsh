@@ -1,5 +1,5 @@
 alias devstart='./dev_start.sh default,localzuul,localvareui morocco'
-alias devprep='./autopipe_to_dev.sh -k && npm ci && npm run build && npm run apina && ./autopipe_to_dev.sh'
+alias devprep='npm ci && npm run apina && npm run build'
 
 alias ls='ls -GF'
 alias grep='grep --color=AUTO'
