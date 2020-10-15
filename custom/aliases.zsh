@@ -1,6 +1,3 @@
-alias devstart='./dev_start.sh default,localzuul,localvareui morocco'
-alias devprep='npm ci && npm run apina && npm run build'
-
 alias ls='ls -GF'
 alias grep='grep --color=AUTO'
 
@@ -19,9 +16,5 @@ ffg() {
 
 alias gst='git status'
 alias gfst='git fetch && git status'
-alias gamend='git commit --verbose --amend --all'
-alias glog='git log --pretty=oneline --abbrev-commit --decorate=auto'
-alias glogg='git log --graph --pretty=oneline --abbrev-commit --decorate=auto'
-alias glogr='git log --pretty=reference --abbrev-commit --decorate=auto'
 alias grbm='git fetch && git rebase origin/master'
 alias lolpull='git stash && git pull --rebase && git stash pop'
