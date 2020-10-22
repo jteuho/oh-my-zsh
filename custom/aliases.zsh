@@ -13,8 +13,3 @@ alias ff='find . -type f -name'
 ffg() {
   find . -type f -name $1 -exec grep $2 '{}' ';' -print
 }
-
-alias gst='git status'
-alias gfst='git fetch && git status'
-alias grbm='git fetch && git rebase origin/master'
-alias lolpull='git stash && git pull --rebase && git stash pop'
