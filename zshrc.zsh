@@ -49,7 +49,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( custom-git docker )
+plugins=( custom-git docker custom-nvm )
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
