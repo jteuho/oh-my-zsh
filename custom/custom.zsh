@@ -5,7 +5,7 @@ export GIT_SSH="/usr/bin/ssh"
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 export PYTHONUSERBASE=~/.local
-export PATH="$PATH:$PYTHONUSERBASE/bin"
+export PATH="$PYTHONUSERBASE/bin:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
