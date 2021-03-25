@@ -1,6 +1,7 @@
 ssh-add -K &> /dev/null
 
 export GIT_SSH="/usr/bin/ssh"
+export GIT_PAGER='/usr/bin/less -r'
 
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
@@ -16,7 +17,6 @@ export PATH=$PATH:/Users/jteuho/scripts
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 export EDITOR='vim'
-
 export LESS="-F -X $LESS"
 
 zstyle ':completion:*' accept-exact '*(N)'

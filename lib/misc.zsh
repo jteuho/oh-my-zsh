@@ -18,7 +18,7 @@ fi
 ## jobs
 setopt long_list_jobs
 
-env_default 'PAGER' 'less'
+env_default 'PAGER' '/usr/bin/less'
 env_default 'LESS' '-R'
 
 ## super user alias
