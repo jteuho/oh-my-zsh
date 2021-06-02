@@ -15,8 +15,8 @@ alias glg='git log --oneline --decorate --graph'
 alias gls='git log --oneline --decorate'
 
 alias grbm='git fetch && git rebase origin/master'
-alias grbh='git rebase -i HEAD~10'
 
+alias grh1='git reset HEAD~1'
 alias grhh='git reset --hard HEAD'
 alias groh='git reset origin/$(git_current_branch) --hard'
 
